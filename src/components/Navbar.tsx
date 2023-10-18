@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Icons } from "./Icons"
+import { buttonVariants } from "@/components/ui/Button"
 const Navbar = () => {
   return (
     <div className="fixed top-0 inset-x-0 h-fit bg-zinc-100 border-b border-zinc-300 z-[10] py-2">
@@ -12,7 +13,10 @@ const Navbar = () => {
                 </p>
             </Link>
             {/* search bar */}
-            
+
+
+            {/* auth button */}
+            <Link href='/sign-in' className={buttonVariants()}>Sign In</Link>
         </div>
     </div>
   )
